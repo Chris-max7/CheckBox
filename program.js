@@ -1,6 +1,16 @@
 l = 400;
 stop = false;
-
+function start(){
+    // div要素を生成
+    var div = document.createElement('input');
+    // classを追加
+    div.className = 'sample';
+    div.type = 'checkbox';
+    div.onclick = 'push()';
+    
+    // 生成したdiv要素を追加する
+    document.getElementById('checkboxes').appendChild(div);
+}
 function push(){ 
     l--
     var obj = event.target;
