@@ -1,4 +1,4 @@
-l = 189;
+l = 400;
 stop = false;
 
 function push(){ 
@@ -27,7 +27,8 @@ function result(){
 
     // 新しいHTML要素を作成
     var new_element = document.createElement('h2');
-    new_element.textContent = 'あなたのTIME : ' + num;
+    h = num -1
+    new_element.textContent = 'あなたのTIME : ' + h;
 
     // 指定した要素の中の末尾に挿入
     textbox_element.appendChild(new_element);
